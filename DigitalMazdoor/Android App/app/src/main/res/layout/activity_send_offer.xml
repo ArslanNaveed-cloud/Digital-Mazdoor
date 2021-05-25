@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aust.fyp.pk.project.application.digitalmazdoor.AddGigs">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="500"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/backgroundforgigsitem"
+                app:counterOverflowTextAppearance="@style/TextLimitError"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="8dp"
+                    android:hint="Offer Description"
+                    android:background="@null"
+                    android:inputType="textMultiLine"
+                    app:hintEnabled="false"
+                    >
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/backgroundforgigsitem"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="10"
+                android:layout_marginBottom="10dp"
+                >
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6.75"
+                    android:background="@null"
+                    android:hint="Enter Your Price In Pkr"
+                    android:inputType="phone"
+                    android:textColor="#000"
+                    app:hintEnabled="false" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/backgroundforgigsitem"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="10">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/backgroundforgigsitem"
+                    android:orientation="horizontal"
+                    android:padding="15dp"
+
+                    android:weightSum="10">
+
+                    <TextView
+                        android:id="@+id/numberofdays"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="9"
+                        android:text="Select Number Of Days To Deliver Order"
+                        android:gravity="center_vertical"
+                        />
+                    <com.sayantan.advancedspinner.SingleSpinner
+                        android:id="@+id/days"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:spinnerLayout="@layout/item" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/sendoffer"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Send Offer"
+                android:textColor="#fff"
+                android:fontFamily="@font/poppins_regular"
+                android:background="@drawable/bg_button"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:background="@drawable/formfieldbackground"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        >
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/buyerpic"
+            android:layout_width="85dp"
+            android:layout_height="95dp"
+            android:padding="5dp"
+            android:src="@drawable/arslannaveed"
+            android:scaleType="centerCrop"
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#66000000"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Arslan Naveed"
+                android:layout_marginBottom="3dp" android:textColor="#000"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Requires : App Develoment"
+                android:layout_marginBottom="3dp"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+            <TextView
+                android:id="@+id/budget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Budget : 25000     In Days: 15"
+                android:layout_marginBottom="3dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_regular"
+                />
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:text="Uploaded On: 2-2-2021"
+
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_regular"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#7E000000"
+        android:layout_margin="5dp"
+        />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#000"
+        android:text="ashasdhasdhasldhaskldaskdhaslkdhaslkdhasldkhasd"
+        android:fontFamily="@font/poppins_regular"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#7E000000"
+        android:layout_margin="5dp"
+        />
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="ashasdhasdhasldhaskldaskdhaslkdhaslkdhasldkhasd"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        >
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:textStyle="bold"
+            android:text="Accepted"
+            android:padding="3dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_regular"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ratingholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/ratenow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:layout_margin="10dp"
+            android:background="@drawable/greenbg"
+            android:padding="10dp"
+            android:text="Rate Now"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+
+</LinearLayout>

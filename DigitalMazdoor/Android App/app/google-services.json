@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "163077482160",
+    "firebase_url": "https://digitalmazdoor-a81ec-default-rtdb.firebaseio.com",
+    "project_id": "digitalmazdoor-a81ec",
+    "storage_bucket": "digitalmazdoor-a81ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163077482160:android:29baf282f66e0fb61c7d75",
+        "android_client_info": {
+          "package_name": "www.karigary.pk.project.application.smartaccessrestaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163077482160-eg7ia3na6k1glh9ondm8mhbd5eq00ot4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "www.karigary.pk.project.application.smartaccessrestaurant",
+            "certificate_hash": "355e02a53cacb2723b67d124d8816297a9b88e83"
+          }
+        },
+        {
+          "client_id": "163077482160-cg1vjlf252p3kk5l569u04ifdg4tm4i5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBkakI_3swiGFbTWjW2lC0avRTBVDnNrA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163077482160-cg1vjlf252p3kk5l569u04ifdg4tm4i5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    >
+
+
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+         android:id="@+id/sendertextmessage"
+          >
+          <TextView
+              android:id="@+id/sendermessage"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentEnd="true"
+              android:layout_margin="5dp"
+
+              android:layout_marginStart="64dp"
+              android:layout_marginTop="4dp"
+              android:layout_marginBottom="4dp"
+              android:background="@drawable/btnbackground"
+              android:padding="15dp"
+              android:text="Hello this is a sample message"
+              android:textColor="#ffff"
+
+              android:textSize="16sp" />
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentEnd="true"
+              android:layout_below="@id/sendermessage"
+              android:orientation="horizontal"
+              >
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/sendermessage"
+                  android:text="Delivered"
+                  android:layout_toStartOf="@+id/status"
+                  />
+              <ImageView
+                  android:id="@+id/status"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                 android:src="@drawable/ic_baseline_check_circle_24"
+                  />
+          </LinearLayout>
+
+      </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/senderimagemessage"
+        android:layout_below="@id/sendertextmessage"
+
+        >
+        <ImageView
+            android:id="@+id/senderimage"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_alignParentEnd="true"
+           android:scaleType="centerCrop"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:padding="15dp"
+            android:src="@drawable/android"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/senderimage"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sendermessage"
+                android:text="Delivered"
+                android:layout_toStartOf="@+id/status"
+                />
+            <ImageView
+                android:id="@+id/status2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_check_circle_24"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:id="@+id/recievertextmessage"
+      android:layout_below="@id/senderimagemessage"
+
+      >
+      <TextView
+          android:id="@+id/recievername"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="4dp"
+          android:text="Name"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/receivedTxt"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/recievername"
+          android:layout_marginEnd="64dp"
+          android:layout_marginBottom="4dp"
+          android:background="@drawable/sendmesssgebackground"
+          android:padding="8dp"
+          android:text="Hello this is a sample text"
+          android:textColor="#ffffff"
+          android:textSize="16sp" />
+
+  </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/recieverimagemessage"
+        android:layout_below="@id/recievertextmessage"
+
+        >
+        <TextView
+            android:id="@+id/recievername2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Name"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/receiverimage"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_below="@id/recievername2"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="4dp"
+            android:padding="15dp"
+            android:src="@drawable/android"
+            android:scaleType="centerCrop"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

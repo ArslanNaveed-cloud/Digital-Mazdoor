@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:weightSum="10"
+    android:background="@drawable/backfordashboarditem"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:padding="8dp"
+
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/gigimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/gigtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I will develop Mobile App For Android Using Firebasse"
+                    android:textSize="14sp"
+                    android:textColor="#000"
+                    android:fontFamily="@font/poppins_medium"
+                    android:padding="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/gigcategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="App Development,Android App"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textStyle="bold"
+                    android:paddingLeft="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/gigprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RS 2000"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:paddingLeft="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/gigdeliverytime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery By 2 days"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textStyle="bold"
+                    android:paddingLeft="5dp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>
